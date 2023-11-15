@@ -1,0 +1,25 @@
+;;
+;; Header files for Counter
+;; NOTE: declarations are sorted for optimal order
+;;
+
+;; __tact_verify_address
+slice __tact_verify_address(slice address) inline;
+
+;; $Counter$_store
+builder $Counter$_store(builder build_0, (int) v) inline;
+
+;; $Counter$_load
+(slice, ((int))) $Counter$_load(slice sc_0) inline;
+
+;; $Counter$_contract_init
+(int) $Counter$_contract_init() impure inline_ref;
+
+;; $Counter$_contract_load
+(int) $Counter$_contract_load() impure inline_ref;
+
+;; $Counter$_contract_store
+() $Counter$_contract_store((int) v) impure inline;
+
+;; $Counter$_fun_value
+((int), int) $Counter$_fun_value((int) $self) impure inline_ref;
